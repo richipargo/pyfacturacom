@@ -15,5 +15,25 @@ class Clients(object):
         """
         Get all Clients
         """
-        LOG.debug('Start List all clients')
         return ApiWrapper.api_call('/clients', dict())
+
+    @staticmethod
+    def find(rfc):
+        """
+        Gets single client from api
+        """
+        return ApiWrapper.api_call('/clients/%s' % rfc, dict())
+
+    @staticmethod
+    def create(data):
+        """
+        Creates client from api
+        """
+        return ApiWrapper.api_call('/clients/create', data, 'POST')
+
+    @staticmethod
+    def update(uid, data):
+        """
+        Updates client from api
+        """
+        return ApiWrapper.api_call('/clients/%s/update' % uid, data, 'POST')

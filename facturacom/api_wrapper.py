@@ -25,13 +25,12 @@ class ApiWrapper(object):
             'F-SECRET-KEY': facturacom.FACTURACOM_SECRET_KEY,
         }
         url = ApiWrapper.get_url(endpoint)
-        LOG.debug('prepare request')
         if method.lower() == 'post':
             req = requests.post(url, json=data, headers=headers)
         else:
             req = requests.get(url, params=data, headers=headers)
 
-        LOG.debug(req.json())
+        LOG.debug(req)
         return req.json()
 
     @staticmethod

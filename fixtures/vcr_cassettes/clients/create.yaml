@@ -1,0 +1,41 @@
+interactions:
+- request:
+    body: !!python/unicode '{"apellidos": "Tapia Mancera", "ciudad": "Ciudad de Mexico",
+      "estado": "Ciudad de Mexico", "razons": "Ricardo Tapia Mancera", "numero_interior":
+      "32", "calle": "Av. Castorena", "colonia": "Cuajimalpa", "delegacion": "Cuajimalpa",
+      "rfc": "TAMR92032229A", "numero_exterior": "30", "nombre": "Ricardo", "telefono":
+      "4433223322", "email": "rtapia92@gmail.com", "codpos": "05000"}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['375']
+      Content-Type: [application/json]
+      F-API-KEY: [JDJ5JDEwJGlZTWhETVZpb01EMmk2REtZWC9EQi53UmhmYlN3TWVPT1N2M3J1U2hEREpibjMuZi80Qk5D]
+      F-SECRET-KEY: [JDJ5JDEwJE5pMlRLZjF0NVh4QkdnTDFJQ3paZ2VPdmIuNm45SGc2YkFoalQ2Tm1sMkdEY295TDF1eWJH]
+      User-Agent: [python-requests/2.18.4]
+    method: POST
+    uri: http://devfactura.in/api/v1/clients/create
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA21QTWsCMRD9K0vOIktWhfXUZVXwsCJbC4VSypiMkpLNSJItpeJ/74yXQvEQmLyP
+        zMu7qpQhj0ktVRqNwZTURK0gg1peVQ8/FJ7JOPDM985AtFQc4OKg6CAYjMDqftMye2i6vtZlpbWu
+        G0Zb8B4Zb76mRQspU8Qg6t04YCQmqpJv25AxOopy1+IiT8HxctWO8OkG8Be4w9adaU+cVZKU87IU
+        d+tGC1bE96GwWHT47QzJH9DjGYyj8Jhf81uWHnN7cFJIt3697w4ZTCYpZEfDMeJfF0w3F/TeWRLD
+        /2bWAzjJG7MQtX46CzA1NDB54IAnChJhNqu4NznqNlEv2xVjc6jNwpijXmC1YLk5WQlV8jQiJ0of
+        R97D7rf32+0XXRzf6cYBAAA=
+    headers:
+      cache-control: [no-cache]
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['302']
+      content-type: [application/json]
+      date: ['Sun, 04 Mar 2018 22:01:47 GMT']
+      keep-alive: ['timeout=2, max=100']
+      server: [Apache/2]
+      set-cookie: ['laravel_session=eyJpdiI6ImVJcXFYSUpobHRIMUk0VW04alMxamc9PSIsInZhbHVlIjoiUThxRGFMK2lWb0U1bDh0VHZKdjN0Zm52OStBU0VyMmplK1ZDNW5cLzZQdDRyY28xME1lcExjRWxRaGM3b2VtbURQbWNDbHZQaXJkUmdmMzcrdEc0dHJBPT0iLCJtYWMiOiIyZWVkNWZhMmQwNTBkODAwMDM3MTczZmQxODAzM2U2ZDc0ZGQxYjNjYjVhMDkyNjJhYWYwMDIyZTdkMzQ1NmMxIn0%3D;
+          expires=Mon, 05-Mar-2018 00:01:47 GMT; Max-Age=7200; path=/; httponly']
+      vary: ['Accept-Encoding,User-Agent']
+    status: {code: 201, message: Created}
+version: 1

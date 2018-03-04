@@ -1,0 +1,36 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      F-API-KEY: [JDJ5JDEwJGlZTWhETVZpb01EMmk2REtZWC9EQi53UmhmYlN3TWVPT1N2M3J1U2hEREpibjMuZi80Qk5D]
+      F-SECRET-KEY: [JDJ5JDEwJE5pMlRLZjF0NVh4QkdnTDFJQ3paZ2VPdmIuNm45SGc2YkFoalQ2Tm1sMkdEY295TDF1eWJH]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://devfactura.in/api/v1/clients/TAMR92032229A
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA21QTWsCMRD9K0vOIktWhfXUZVXwsCJbC4VSypiMkpLNSJItpeJ/74yXQvEQmLyP
+        zMu7qpQhj0ktVRqNwZTURK0gg1peVQ8/FJ7JOPDM985AtFQc4OKg6CAYjMDqftMye2i6vtZlpbWu
+        G0Zb8B4Zb76mRQspU8Qg6t04YCQmqpJv25AxOopy1+IiT8HxctWO8OkG8Be4w9adaU+cVZKU87IU
+        d+tGC1bE96GwWHT47QzJH9DjGYyj8Jhf81uWHnN7cFJIt3697w4ZTCYpZEfDMeJfF0w3F/TeWRLD
+        /2bWAzjJG7MQtX46CzA1NDB54IAnChJhNqu4NznqNlEv2xVjc6jNwpijXmC1YLk5WQlV8jQiJ0of
+        R97D7rf32+0XXRzf6cYBAAA=
+    headers:
+      cache-control: [no-cache]
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['302']
+      content-type: [application/json]
+      date: ['Sun, 04 Mar 2018 22:02:03 GMT']
+      keep-alive: ['timeout=2, max=100']
+      server: [Apache/2]
+      set-cookie: ['laravel_session=eyJpdiI6Iis3VDBOaFgyUUlzSHAxXC85RndsN29BPT0iLCJ2YWx1ZSI6IjlSUFdBblFQc3hDd2d3ZU5YbG5zQm9kcjhDK2Y2ZjRBeGhBeFo0NTZySlZTMVp3VU5KMW9DOU03b1ZxSm1BUVV1VGMxVmgweEgxWDlhZTJMa2p6aUV3PT0iLCJtYWMiOiIwODI2N2IwMzA5MDViNDI1NjA4OTA1ZTFhNTc0ZDNiNTIwMzUwNmE2ZTZhOTAzYmQxNjc1NWYwN2NmMTliMzUwIn0%3D;
+          expires=Mon, 05-Mar-2018 00:02:03 GMT; Max-Age=7200; path=/; httponly']
+      vary: ['Accept-Encoding,User-Agent']
+    status: {code: 200, message: OK}
+version: 1

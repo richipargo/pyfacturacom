@@ -15,4 +15,53 @@ class TestClients(unittest.TestCase):
     def test_list_all(self):
         with vcr.use_cassette('fixtures/vcr_cassettes/clients/list_all.yaml'):
             clients = Clients.list_all()
-            assert False
+            assert clients['status'] == 'success'
+
+    def test_find(self):
+        with vcr.use_cassette('fixtures/vcr_cassettes/clients/find.yaml'):
+            clients = Clients.find('TAMR92032229A')
+            assert clients['status'] == 'success'
+
+    def test_create(self):
+        with vcr.use_cassette('fixtures/vcr_cassettes/clients/create.yaml'):
+            clients = Clients.create({
+                'nombre': 'Ricardo',
+                'apellidos': 'Tapia Mancera',
+                'email': 'rtapia92@gmail.com',
+                'telefono': '4433223322',
+                'razons': 'Ricardo Tapia Mancera',
+                'rfc': 'TAMR92032229A',
+                'calle': 'Av. Castorena',
+                'numero_exterior': '30',
+                'numero_interior': '32',
+                'codpos': '05000',
+                'colonia': 'Cuajimalpa',
+                'estado': 'Ciudad de Mexico',
+                'ciudad': 'Ciudad de Mexico',
+                'delegacion': 'Cuajimalpa'
+            })
+            LOG.debug(clients)
+            assert clients['Data']['Contacto']['Nombre'] == 'Ricardo'
+            assert clients['status'] == 'success'
+
+    def test_update(self):
+        with vcr.use_cassette('fixtures/vcr_cassettes/clients/update.yaml'):
+            clients = Clients.update('5a9c6ccb26e36', {
+                'nombre': 'Ricardo',
+                'apellidos': 'Tapia Mancera',
+                'email': 'rtapia92@gmail.com',
+                'telefono': '4433223322',
+                'razons': 'Ricardo Tapia Mancera',
+                'rfc': 'TAMR92032229A',
+                'calle': 'Av. Castorena',
+                'numero_exterior': '30',
+                'numero_interior': '32',
+                'codpos': '05000',
+                'colonia': 'Cuajimalpa',
+                'estado': 'Ciudad de Mexico',
+                'ciudad': 'Ciudad de Mexico',
+                'delegacion': 'Cuajimalpa'
+            })
+            LOG.debug(clients)
+            assert clients['Data']['Contacto']['Nombre'] == 'Ricardo'
+            assert clients['status'] == 'success'
