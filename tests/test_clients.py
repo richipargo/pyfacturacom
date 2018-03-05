@@ -15,6 +15,7 @@ class TestClients(unittest.TestCase):
     def test_list_all(self):
         with vcr.use_cassette('fixtures/vcr_cassettes/clients/list_all.yaml'):
             clients = Clients.list_all()
+            LOG.debug(clients)
             assert clients['status'] == 'success'
 
     def test_find(self):

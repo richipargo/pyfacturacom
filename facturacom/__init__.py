@@ -9,4 +9,4 @@ FACTURACOM_SECRET_KEY = ''
 
 FACTURACOM_SANDBOX = 'http://devfactura.in'
 FACTURACOM_PRODUCTION = 'https://factura.com'
-FACTURACOM_NAMESPACE = '/api/v1'
+FACTURACOM_NAMESPACE = '/api'

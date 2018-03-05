@@ -15,25 +15,25 @@ class Clients(object):
         """
         Get all Clients
         """
-        return ApiWrapper.api_call('/clients', dict())
+        return ApiWrapper.api_call('/v1/clients', dict())
 
     @staticmethod
     def find(rfc):
         """
         Gets single client from api
         """
-        return ApiWrapper.api_call('/clients/%s' % rfc, dict())
+        return ApiWrapper.api_call('/v1/clients/%s' % rfc, dict())
 
     @staticmethod
     def create(data):
         """
         Creates client from api
         """
-        return ApiWrapper.api_call('/clients/create', data, 'POST')
+        return ApiWrapper.api_call('/v1/clients/create', data, 'POST')
 
     @staticmethod
     def update(uid, data):
         """
         Updates client from api
         """
-        return ApiWrapper.api_call('/clients/%s/update' % uid, data, 'POST')
+        return ApiWrapper.api_call('/v1/clients/%s/update' % uid, data, 'POST')

@@ -1,0 +1,38 @@
+interactions:
+- request:
+    body: !!python/unicode '{"apellidos": "Tapia Mancera", "ciudad": "Ciudad de Mexico",
+      "estado": "Ciudad de Mexico", "razons": "Ricardo Tapia Mancera", "numero_interior":
+      "32", "calle": "Av. Castorena", "colonia": "Cuajimalpa", "delegacion": "Cuajimalpa",
+      "rfc": "TAMR92032229A", "numero_exterior": "30", "nombre": "Ricardo", "telefono":
+      "4433223322", "email": "rtapia92@gmail.com", "codpos": "05000"}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['375']
+      Content-Type: [application/json]
+      F-API-KEY: [JDJ5JDEwJGlZTWhETVZpb01EMmk2REtZWC9EQi53UmhmYlN3TWVPT1N2M3J1U2hEREpibjMuZi80Qk5D]
+      F-SECRET-KEY: [JDJ5JDEwJE5pMlRLZjF0NVh4QkdnTDFJQ3paZ2VPdmIuNm45SGc2YkFoalQ2Tm1sMkdEY295TDF1eWJH]
+      User-Agent: [python-requests/2.18.4]
+    method: POST
+    uri: http://devfactura.in/api/v3/cfdi33/create
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA3XKMQ7CMAxG4atYnlEPUCG2HiSNf1CkJk7tZqq4O4GhC8r63neywasWB88MMzW+
+        cYZ7eH3LslEMuSoZIuqhNlFLJATvZW+wJHpf7XG5qOUHfUyad/YkSWPiPWG8sxZI+Pv8/gDHxhPJ
+        zgAAAA==
+    headers:
+      cache-control: [no-cache]
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['118']
+      content-type: [application/json]
+      date: ['Mon, 05 Mar 2018 05:30:47 GMT']
+      keep-alive: ['timeout=2, max=100']
+      server: [Apache/2]
+      set-cookie: ['laravel_session=eyJpdiI6IlgrYldUcE5wSU9BRnF0VWtkdExMSGc9PSIsInZhbHVlIjoiRFlOanZWT01xSkJuT1VNVlFDWklkZUlGVmFqUHNZTjh4YzRwV1l4ak9RK2VrSUdSUGJSY25KY0hpc1VuZVVVVHJhamFnSFdkZExxMEhZaUd2SnNORmc9PSIsIm1hYyI6IjQ4MGI3ZDMyMjcxYTk2NTEyZmM0NGRiNDIyMDkzZTUyYzI0MGY4ZTJjYTk0ZjQyYjQyZGJjZjc2MzRmNzIzYjEifQ%3D%3D;
+          expires=Mon, 05-Mar-2018 07:30:47 GMT; Max-Age=7200; path=/; httponly']
+      vary: ['Accept-Encoding,User-Agent']
+    status: {code: 200, message: OK}
+version: 1
