@@ -1,8 +1,9 @@
 import logging
 import unittest
+from datetime import datetime
+from os import path
 import vcr
 import facturacom
-from datetime import datetime
 from facturacom.cfdi import Cfdi
 
 LOG = logging.getLogger(__name__)
@@ -77,3 +78,15 @@ class TestClients(unittest.TestCase):
             cfdi = Cfdi.cancel('5aa5de2a19158')
             LOG.debug(cfdi)
             assert cfdi['response'] == 'success'
+
+    def test_xml(self):
+        with vcr.use_cassette('fixtures/vcr_cassettes/cfdi/xml.yaml'):
+            cfdi = Cfdi.xml('5aa5de2a19158')
+            LOG.debug(cfdi.name)
+            assert path.isfile(cfdi.name)
+
+    def test_pdf(self):
+        with vcr.use_cassette('fixtures/vcr_cassettes/cfdi/pdf.yaml'):
+            cfdi = Cfdi.pdf('5aa5de2a19158')
+            LOG.debug(cfdi.name)
+            assert path.isfile(cfdi.name)

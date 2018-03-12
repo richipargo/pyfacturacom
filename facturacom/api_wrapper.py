@@ -12,7 +12,7 @@ class ApiWrapper(object):
         pass
 
     @staticmethod
-    def api_call(endpoint, data, method='GET'):
+    def api_call(endpoint, data, method='GET', file=False):
         """
         Makes api call
         @param method: type of REST request
@@ -31,7 +31,12 @@ class ApiWrapper(object):
             req = requests.get(url, params=data, headers=headers)
 
         LOG.debug(req)
-        return req.json()
+        if req.status_code >= 400:
+            return req
+        elif req.status_code <= 299 and file:
+            return req
+        else:
+            return req.json()
 
     @staticmethod
     def get_url(endpoint):
