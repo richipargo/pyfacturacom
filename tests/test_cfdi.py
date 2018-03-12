@@ -2,6 +2,7 @@ import logging
 import unittest
 import vcr
 import facturacom
+from datetime import datetime
 from facturacom.cfdi import Cfdi
 
 LOG = logging.getLogger(__name__)
@@ -15,25 +16,58 @@ class TestClients(unittest.TestCase):
     def test_list_all(self):
         with vcr.use_cassette('fixtures/vcr_cassettes/cfdi/list_all.yaml'):
             cfdis = Cfdi.list_all()
+            LOG.debug(cfdis)
             assert cfdis['status'] == 'success'
 
     def test_create(self):
         with vcr.use_cassette('fixtures/vcr_cassettes/cfdi/create.yaml'):
-            clients = Cfdi.create({
-                'nombre': 'Ricardo',
-                'apellidos': 'Tapia Mancera',
-                'email': 'rtapia92@gmail.com',
-                'telefono': '4433223322',
-                'razons': 'Ricardo Tapia Mancera',
-                'rfc': 'TAMR92032229A',
-                'calle': 'Av. Castorena',
-                'numero_exterior': '30',
-                'numero_interior': '32',
-                'codpos': '05000',
-                'colonia': 'Cuajimalpa',
-                'estado': 'Ciudad de Mexico',
-                'ciudad': 'Ciudad de Mexico',
-                'delegacion': 'Cuajimalpa'
+            cfdi = Cfdi.create({
+                "Receptor": {
+                    "UID": "5a9c6ccb26e36",
+                    "ResidenciaFiscal": "023203d",
+                },
+                "TipoDocumento":"factura",
+                "Conceptos": [{
+                    "ClaveProdServ": "25181608",
+                    "NoIdentificacion": "SKU-12122",
+                    "Cantidad": 10,
+                    "ClaveUnidad": "E48",
+                    "Unidad": "Unidad de servicio",
+                    "ValorUnitario": 1500,
+                    "Descripcion": 'Diseno de interfaces para sitio web',
+                    "Descuento": 0,
+                    "Impuestos": {
+                        "Traslados": [{
+                            "Base" : 15000,
+                            "Impuesto": "002",
+                            "TipoFactor": "Tasa",
+                            "TasaOCuota": 0.16,
+                            "Importe": 2400
+                        }],
+                        "Retenidos": [{
+                            "Base" : 15000,
+                            "Impuesto": "001",
+                            "TipoFactor": "Tasa",
+                            "TasaOCuota": 0.10,
+                            "Importe": 1500
+                        }],
+                        "Locales": [{
+                            "Impuesto": "ISH",
+                            "TasaOCuota": 0.03
+                        }]
+                    },
+                }],
+                "UsoCFDI": "G02",
+                "Serie":"1215",
+                "FormaPago":"03",
+                "MetodoPago": "PUE",
+                "CondicionesDePago": "Pago en 10 dias",
+                "Moneda": "MXN",
+                "TipoCambio": 19.89,
+                "NumOrder": "MY-Order-10",
+                "FechaFromAPI": datetime.now().replace(microsecond=0).isoformat(),
+                "Comentarios": "Comentarios para agregar a la factura PDF",
+                "EnviarCorreo": False
             })
-            LOG.debug(clients)
-            assert clients['status'] == 'success'
+            LOG.debug(cfdi)
+            assert cfdi['response'] == 'success'
