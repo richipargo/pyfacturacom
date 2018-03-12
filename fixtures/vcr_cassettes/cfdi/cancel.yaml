@@ -1,0 +1,32 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Type: [application/json]
+      F-API-KEY: [JDJ5JDEwJGlZTWhETVZpb01EMmk2REtZWC9EQi53UmhmYlN3TWVPT1N2M3J1U2hEREpibjMuZi80Qk5D]
+      F-SECRET-KEY: [JDJ5JDEwJE5pMlRLZjF0NVh4QkdnTDFJQ3paZ2VPdmIuNm45SGc2YkFoalQ2Tm1sMkdEY295TDF1eWJH]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://devfactura.in/api/v3/cfdi33/5aa5de2a19158/cancel
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAxXJwQ2AIAxA0VWanjmSkDiAE7hAU6o2ETCUnoy7i8f/34Nd7G7VBBc0ZxYzDOia
+        cUkxxYBlHjp+3hxW4uGdApwEprkBU2W5KM+kobZPb12pSB2C7we3dM40XgAAAA==
+    headers:
+      cache-control: [no-cache]
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['103']
+      content-type: [application/json]
+      date: ['Mon, 12 Mar 2018 02:00:11 GMT']
+      keep-alive: ['timeout=2, max=100']
+      server: [Apache/2]
+      set-cookie: ['laravel_session=eyJpdiI6Im1nVHBRTkg3bTQ5RW1SYlwvQkUyKzdBPT0iLCJ2YWx1ZSI6IkZoTUJzQXRRbnd2UXVsbVJJS0JJdEJ1WGcxYkxuM29iQk5BVzYrZ3V6bDllZEs5UHdSc2R0OEE1bXRDdml3Z0FwXC9IaVNVSGphMFNcL04yWnZTeHBYVHc9PSIsIm1hYyI6IjZiNjk0NjczYzE5NGE3ZmU0MGEwNDFiMGJmZjNkOTQzMjU0YTMxZWM5MjNiMjEzZDIyNzllZWIxZTAwYzk1MmQifQ%3D%3D;
+          expires=Mon, 12-Mar-2018 04:00:11 GMT; Max-Age=7200; path=/; httponly']
+      vary: ['Accept-Encoding,User-Agent']
+    status: {code: 200, message: OK}
+version: 1

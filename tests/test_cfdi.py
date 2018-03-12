@@ -71,3 +71,9 @@ class TestClients(unittest.TestCase):
             })
             LOG.debug(cfdi)
             assert cfdi['response'] == 'success'
+
+    def test_cancel(self):
+        with vcr.use_cassette('fixtures/vcr_cassettes/cfdi/cancel.yaml'):
+            cfdi = Cfdi.cancel('5aa5de2a19158')
+            LOG.debug(cfdi)
+            assert cfdi['response'] == 'success'

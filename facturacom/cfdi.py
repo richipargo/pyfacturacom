@@ -23,3 +23,10 @@ class Cfdi(object):
         Creates cfdi from api
         """
         return ApiWrapper.api_call('/v3/cfdi33/create', data, 'POST')
+
+    @staticmethod
+    def cancel(uid):
+        """
+        Creates cfdi from api
+        """
+        return ApiWrapper.api_call('/v3/cfdi33/%s/cancel' % uid, dict())
