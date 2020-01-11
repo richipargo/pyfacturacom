@@ -1,7 +1,7 @@
 interactions:
 - request:
     body: !!python/unicode '{"CondicionesDePago": "Pago en 10 dias", "TipoCambio":
-      19.89, "TipoDocumento": "factura", "MetodoPago": "PUE", "FechaFromAPI": "2018-03-11T19:56:40",
+      19.89, "TipoDocumento": "factura", "MetodoPago": "PUE", "FechaFromAPI": "2020-01-11T09:06:13",
       "Comentarios": "Comentarios para agregar a la factura PDF", "NumOrder": "MY-Order-10",
       "FormaPago": "03", "UsoCFDI": "G02", "EnviarCorreo": false, "Serie": "1215",
       "Conceptos": [{"ClaveProdServ": "25181608", "Cantidad": 10, "NoIdentificacion":
@@ -13,45 +13,67 @@ interactions:
       "Importe": 2400}]}, "Unidad": "Unidad de servicio"}], "Receptor": {"ResidenciaFiscal":
       "023203d", "UID": "5a9c6ccb26e36"}, "Moneda": "MXN"}'
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Length: ['929']
-      Content-Type: [application/json]
-      F-API-KEY: [JDJ5JDEwJGlZTWhETVZpb01EMmk2REtZWC9EQi53UmhmYlN3TWVPT1N2M3J1U2hEREpibjMuZi80Qk5D]
-      F-SECRET-KEY: [JDJ5JDEwJE5pMlRLZjF0NVh4QkdnTDFJQ3paZ2VPdmIuNm45SGc2YkFoalQ2Tm1sMkdEY295TDF1eWJH]
-      User-Agent: [python-requests/2.18.4]
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '929'
+      Content-Type:
+      - application/json
+      F-API-KEY:
+      - JDJ5JDEwJGlZTWhETVZpb01EMmk2REtZWC9EQi53UmhmYlN3TWVPT1N2M3J1U2hEREpibjMuZi80Qk5D
+      F-SECRET-KEY:
+      - JDJ5JDEwJE5pMlRLZjF0NVh4QkdnTDFJQ3paZ2VPdmIuNm45SGc2YkFoalQ2Tm1sMkdEY295TDF1eWJH
+      User-Agent:
+      - python-requests/2.22.0
     method: POST
     uri: http://devfactura.in/api/v3/cfdi33/create
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA5WTW6+iOhTHv8qOr45Hyp2dzIOAYBEvbJCtxuSkQMGCcimXESfz3afuzLydl9Ok
-        abPW77+6spr/zwnFbV2VLZ68T9o+jnHbTr5N7uxA2StmobjrKXqLKUYJehvfcDmQ161FHWlTlq0o
-        QXdcdpjpDgdoMpEsIhULCM34JBZnoiRrM5WXhVkspDHgFMAlgsLoniQMlhCSEswjoAFJZVF/EUze
-        f/7PUhaOrygg94iipGIyngPqjBNmAARAe5fkdxEwalsZmHYkJTGjvt5hIMcB7msJbPO8wAuMDDFt
-        SVUyAPzzUvr4dvuj2NEQXA1vPdanZHMHqaw36T5Q1Yd666/TLgzifo2RGt4v83Kp5DUNQ+RKzSKz
-        qmLb3d2zb9IFMgZvzHkpLY/tJow60DQrq0wsjqm0NsocMdK6sxao8OBMtbXeL2/JdO/kt3WaOatT
-        N4IGJZJV2BLXl27AuZv70c1Wz9PD9alp03qrHxc7T3tW1Q4Vi7D+fCBVQ4tePmVdDeRhdcsTsESJ
-        Vw/Rve49BzaXubNwYm4dfAZyztX6cvRifXjAqBeGQPf7Kz8yJBUU4iKo+NjeoRrLhux9HBTPs50z
-        z8FkWftgV2hbuCVCa0X1Zpm6fGGcykjNU0M3BjgtrY8pzG1TXO/WfGmG5BYcpnJYLr5//ztpw3r9
-        vY2n28MDmq78DJzLfNOm6WWOYAyDqQ4Gr4rdqECXOS8rBXem5mWe9DUO9zftMvfVOBKO26c0Wkc5
-        yaqya8ZWgU55DOsnty/j2AVyJGZgJNcIlJ6VPQqp3St6zhVXxbBVbxnQlVbv/U8r+BHJp160IV0o
-        l/nYGVQ53E/EldSQmpYUnYyF8aSZEpTyuMH7bnxGRTA6FO45LcDByr6SDesynY4+9OLqzLrgDN8/
-        FKaGdVGyhcscBnVqit6QtFK1zLoflaEK3AdYpx3+fMKRa7wQLR+ttor0Jgkjo1qzRkiltvzgV7JP
-        cx3m5mOkAoTLwPYIf2yuZthEa4ffVisqFrxNSJE/dO1jV5BnmhiR7rFx//o2gdvwZTcfU/Ll95eZ
-        qhthJuJZlpRDRWL8739Z9ddvbu0YCD0EAAA=
+        H4sIAAAAAAAAA5WTyY6jSBCGX6XkK+1hNUtJfcBgsFnsMpsxQhqxJJBmNbtp9bs3Ls3c5jIppTIV
+        8f0ZoUj9vzYt6Jq66sDmc9MNUQS6bvNjU65HkL5jUhD1Qxt8RC0I4uDj9QGqEb5vXdDDLlmzdQuD
+        ElQ9WHW2fRJXUcTFDMEkzJYBNLalcILasoBjtwkesDTDBLskolZ6gPEK7wDOJQQV02FIRmvU5K3N
+        56//+ZQEoiywYBm2QVyvMgIjsC2Gb3HcwrFPjP7E39S5FkDbwwRGK/VdZwUxDMe+F7lugiAJciUd
+        0HawrlYA/wt/NwWK4h/Fw2QyKahtWUwsqOHR8d5YsfAiKliwHFyOy9GNAx8dnChP1adUxPdL1M+L
+        Os8KZMMioN2v0NPLkTZimmi7rzNzrQrZya9AOSqNWZ7YJRuE/Qx0xRiJGxb2DV77qD1XshsrDser
+        F4l6Uj6K9EN5P4+C5s66cgDmWW45fdcuPHs0mM6aVUnURMqLKgSSeAHlRj+SkkkgEqbXHtE9Yrem
+        Lkm8UJDsx9RM5zELhfv48lHZU/DmEh9OS36P7wqTPQ1FU7JEb4raq6h0d9ofjJ3g4a2XD0HpDsZl
+        hiFicwTdIY6PSkInPmeRJ8d+LhqhWKu2Tn5ZInrWnFD7uku7GBLLLJvElbRdqk2vr1EWrj9//jtq
+        QXp/vqsZPemjgkHpa1eQRMDzJd8yLvPR6clk7PM0Awbzbj7ahu7g6XKuvShwGpAI0vFxnCwrsUM1
+        fbjC1eZMDa8GUgaJDdpGcVo+kLDLWbfLnBfrIx1aWGyyuCcJ4RfnozpXG/L5nDhPU3XG2XC7WB0U
+        H3WzF68imCG3pdEfmhepBUlQPdKEmZRj01TRtFMsBNbp7oAopSvXy9FHm3Um6ut2ttNe6fNJwjxA
+        9v2iH4Q84Mlry+LIjZBuonaXohlBuHKvN9lE8lNeEdPBje6KQEVmx+sT8DjFRPa3chy56VrCwYBG
+        3h+e6vmpKXpSSuYhNk7D47Zo1Q2XLqJ3FZl90i814ubGjDzUYVoubhjsfJRfx/37x+Z0dt5+M0EL
+        vw3/dlNdwNVF5JqF1VjDCPz9X179/Qeiyay6PgQAAA==
     headers:
-      cache-control: [no-cache]
-      connection: [Keep-Alive]
-      content-encoding: [gzip]
-      content-length: ['824']
-      content-type: [application/json]
-      date: ['Mon, 12 Mar 2018 01:55:54 GMT']
-      keep-alive: ['timeout=2, max=100']
-      server: [Apache/2]
-      set-cookie: ['laravel_session=eyJpdiI6InREQ3l0NjQzbjUyd0NJWE4xM08wMkE9PSIsInZhbHVlIjoiRm81VVMxZ21RUGtiaHRlTEY5eFlQWmFRdkd3Z1k2NjUxamI4MVVVRU14MVV3UlpzazRTdEdpQzRBeWZyanowUEhEbXdqZ2hXREU0UUM1Y1Z4YkRoUFE9PSIsIm1hYyI6IjIxNTc0MGIyMDhmOTIyODM0ZjI2OGVlOTU5ZDVmOGFmYmUwY2RlYmM1YjkwMzgxYmIwOGE4MzU3MGRlMGI1ZTAifQ%3D%3D;
-          expires=Mon, 12-Mar-2018 03:55:54 GMT; Max-Age=7200; path=/; httponly']
-      vary: ['Accept-Encoding,User-Agent']
-    status: {code: 200, message: OK}
+      cache-control:
+      - no-cache
+      connection:
+      - Keep-Alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '829'
+      content-type:
+      - application/json
+      date:
+      - Sat, 11 Jan 2020 16:05:33 GMT
+      keep-alive:
+      - timeout=2, max=100
+      server:
+      - Apache/2
+      set-cookie:
+      - laravel_session=eyJpdiI6Im1TVHM3UVpYYWZFcnZaSTg0YmRBelE9PSIsInZhbHVlIjoid3hEVzEyWGlyeWpDUVROaXNTbUp3d29SaWlZT2pFZlI2M25vMGZwdjBPVVU0YjNyR3dqbU1yNkRWcFVcLzVmY2thOWV4ZEpybDJvWmU1bFhtd01EOFpBPT0iLCJtYWMiOiI2ZjVjOTVmZmQyYWFkOGVkZjQ5YjE3ZjcxOGRjOGE3NTJjYzcyNDc4OGFkZmQ1MDI5Y2Q2NDgyMTNkODA4Y2MxIn0%3D;
+        expires=Sat, 11-Jan-2020 18:05:33 GMT; Max-Age=7200; path=/; httponly
+      vary:
+      - Accept-Encoding,User-Agent
+      x-powered-by:
+      - PHP/5.6.31
+    status:
+      code: 200
+      message: OK
 version: 1

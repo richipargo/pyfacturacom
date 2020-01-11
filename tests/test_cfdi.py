@@ -1,6 +1,6 @@
 import logging
 import unittest
-from datetime import datetime
+from datetime import datetime, timedelta
 from os import path
 import vcr
 import facturacom
@@ -8,7 +8,7 @@ from facturacom.cfdi import Cfdi
 
 LOG = logging.getLogger(__name__)
 
-class TestClients(unittest.TestCase):
+class TestCfdi(unittest.TestCase):
     def setUp(self):
         facturacom.DEBUG = True
         facturacom.FACTURACOM_API_KEY = 'JDJ5JDEwJGlZTWhETVZpb01EMmk2REtZWC9EQi53UmhmYlN3TWVPT1N2M3J1U2hEREpibjMuZi80Qk5D'
@@ -22,6 +22,9 @@ class TestClients(unittest.TestCase):
 
     def test_create(self):
         with vcr.use_cassette('fixtures/vcr_cassettes/cfdi/create.yaml'):
+            dat = datetime.now().replace(microsecond=0) - timedelta(hours=8)
+            date_string = dat.isoformat()
+            LOG.debug(dat)
             cfdi = Cfdi.create({
                 "Receptor": {
                     "UID": "5a9c6ccb26e36",
@@ -66,7 +69,7 @@ class TestClients(unittest.TestCase):
                 "Moneda": "MXN",
                 "TipoCambio": 19.89,
                 "NumOrder": "MY-Order-10",
-                "FechaFromAPI": datetime.now().replace(microsecond=0).isoformat(),
+                "FechaFromAPI": date_string,
                 "Comentarios": "Comentarios para agregar a la factura PDF",
                 "EnviarCorreo": False
             })
@@ -75,18 +78,18 @@ class TestClients(unittest.TestCase):
 
     def test_cancel(self):
         with vcr.use_cassette('fixtures/vcr_cassettes/cfdi/cancel.yaml'):
-            cfdi = Cfdi.cancel('5aa5de2a19158')
+            cfdi = Cfdi.cancel('5e19f24d6bb3c')
             LOG.debug(cfdi)
             assert cfdi['response'] == 'success'
 
     def test_xml(self):
         with vcr.use_cassette('fixtures/vcr_cassettes/cfdi/xml.yaml'):
-            cfdi = Cfdi.xml('5aa5de2a19158')
+            cfdi = Cfdi.xml('5e19f24d6bb3c')
             LOG.debug(cfdi.name)
             assert path.isfile(cfdi.name)
 
     def test_pdf(self):
         with vcr.use_cassette('fixtures/vcr_cassettes/cfdi/pdf.yaml'):
-            cfdi = Cfdi.pdf('5aa5de2a19158')
+            cfdi = Cfdi.pdf('5e19f24d6bb3c')
             LOG.debug(cfdi.name)
             assert path.isfile(cfdi.name)
