@@ -1,0 +1,58 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      F-API-KEY:
+      - JDJ5JDEwJGlZTWhETVZpb01EMmk2REtZWC9EQi53UmhmYlN3TWVPT1N2M3J1U2hEREpibjMuZi80Qk5D
+      F-SECRET-KEY:
+      - JDJ5JDEwJE5pMlRLZjF0NVh4QkdnTDFJQ3paZ2VPdmIuNm45SGc2YkFoalQ2Tm1sMkdEY295TDF1eWJH
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: http://devfactura.in/api/v3/catalogo/FormaPago
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA4WTP0/DMBDFv4rluUOaFmi7oZaBAVQhxAIMh30uB8k52EklVPW746aouVRBrLnf
+        uz/PLzsdMFaeI+qFjo0xGKMeaQs16MXzTn/idypk4/SNoTxANw5NTVuv96NTOe/Ky3f8alCxL4nh
+        nJt03GMAjg4DsiFQWKSm4aXJMjdhMqAsKufZ+ijlUyGH8IF1y5lWh3NLdW/YRUffeUaLwZ/P6fGX
+        Hb8i/o+edfQTFBgPm9hkJXIEwY2FNSsw9NtMIasKNrLjWJizTiVV+aBi8xb8ptNJfjrAm/SStOFh
+        gTBkefD2D+xKYmV70BCXi33v/XaYmfZGuiYOQWKvByzpxBwtbaz0MxevtE7RNYGqzlWvDNjGkAUr
+        NeKiaxVTKqMDY8SYQoEJiNYHKZsNxs0e0/bWT1s+H4Qjhi0Z6sV4kol1qiKlXa6igOukqPoS8f/d
+        co2hREsQyLchkuRc7LFOgbDoiCmd9br/AT0My4DrAwAA
+    headers:
+      cache-control:
+      - no-cache
+      connection:
+      - Keep-Alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '375'
+      content-type:
+      - application/json
+      date:
+      - Mon, 24 Feb 2020 19:43:22 GMT
+      keep-alive:
+      - timeout=2, max=100
+      server:
+      - Apache/2
+      set-cookie:
+      - laravel_session=eyJpdiI6IkR0VU1oWEVMVlpvVlFKUHVqTzlwNnc9PSIsInZhbHVlIjoieFBnbHZKclRvM3FWaDF5YVFKZDJlaUNoVjlzNHpUelJ2dHNBM2E1UWtaak1OQVZsSVRUWkVoendJXC9CYnpRdzdHWlM5YUVIbEZaZ1dGQmpmU201RGNBPT0iLCJtYWMiOiIzMjIzNTZjZDMwZDhhNjc2OWY5MDM1YTU1MGFhOWRlZTNkNTUwZGVjYzc4ZmU1NThhYzE5ZjkwNzVhMzIyY2EwIn0%3D;
+        expires=Mon, 24-Feb-2020 21:43:22 GMT; Max-Age=7200; path=/; httponly
+      vary:
+      - Accept-Encoding,User-Agent
+      x-powered-by:
+      - PHP/5.6.31
+    status:
+      code: 200
+      message: OK
+version: 1

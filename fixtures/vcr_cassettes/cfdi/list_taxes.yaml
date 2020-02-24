@@ -1,0 +1,53 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      F-API-KEY:
+      - JDJ5JDEwJGlZTWhETVZpb01EMmk2REtZWC9EQi53UmhmYlN3TWVPT1N2M3J1U2hEREpibjMuZi80Qk5D
+      F-SECRET-KEY:
+      - JDJ5JDEwJE5pMlRLZjF0NVh4QkdnTDFJQ3paZ2VPdmIuNm45SGc2YkFoalQ2Tm1sMkdEY295TDF1eWJH
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: http://devfactura.in/api/v3/catalogo/Impuesto
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWKkotLsjPK05VslIqLk1OTi0uVtJRSkksSVSyiq5Wyk6tBEoYGBgCBfMSc0Gq
+        PIODlGp1EFJGSFJhjihSxkhSrgHBSrWxtQDCsf88cQAAAA==
+    headers:
+      cache-control:
+      - no-cache
+      connection:
+      - Keep-Alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '91'
+      content-type:
+      - application/json
+      date:
+      - Mon, 24 Feb 2020 19:43:25 GMT
+      keep-alive:
+      - timeout=2, max=100
+      server:
+      - Apache/2
+      set-cookie:
+      - laravel_session=eyJpdiI6InZ6MnFKTVA5ZVowMkNSakk0NEszdkE9PSIsInZhbHVlIjoienpqd1dXYkw4XC9Dem5YdGI1N2lLZjVGVHNuQjZxT0xMQjFZZ1pNXC9MXC9EYzQrMnVWSWdSclczTGREbGJ4aVwvblNORGZsXC8wZEh3OHBodDI4ZGR3MEl0QT09IiwibWFjIjoiYTAxZjExYmFhNTk2MmM5ZGQ1OTRiZWJiYzVhNjU1YmYxOTNjZGVmYzNlNDZjODk3YWIyYzY3MjJiN2M4OGU3NiJ9;
+        expires=Mon, 24-Feb-2020 21:43:25 GMT; Max-Age=7200; path=/; httponly
+      vary:
+      - Accept-Encoding,User-Agent
+      x-powered-by:
+      - PHP/5.6.31
+    status:
+      code: 200
+      message: OK
+version: 1
