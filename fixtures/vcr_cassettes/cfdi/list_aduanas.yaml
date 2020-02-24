@@ -1,0 +1,68 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      F-API-KEY:
+      - JDJ5JDEwJGlZTWhETVZpb01EMmk2REtZWC9EQi53UmhmYlN3TWVPT1N2M3J1U2hEREpibjMuZi80Qk5D
+      F-SECRET-KEY:
+      - JDJ5JDEwJE5pMlRLZjF0NVh4QkdnTDFJQ3paZ2VPdmIuNm45SGc2YkFoalQ2Tm1sMkdEY295TDF1eWJH
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: http://devfactura.in/api/v3/catalogo/Aduana
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA31WTW/jNhD9K4TOPvgz8e5tLHFtBhSpkOIiVttDkM2p6Laou4dikf/eR9mSRhJd
+        ILCGDN+QnDfzhj+zv98vf/35/fKefc4uP97e3i+XbJF9e/3nNfv8y8/s9/d/8Y/lCnPfX/+Iiyin
+        KujcLkRniUKKp0BONgtxDNI56Wz2sejBawY+BhKVU7Im4PnAW2MdcdhugPlwqKVR0tRSaFvFjRJT
+        z0GZmgwJZ0f7PwyOchUKKnBgLXJypTQLkZqispL5SXInjzMn3ZWnw5M6BcIfR+8Z2lLdEH4ROY/l
+        4+FX6Sh3oWHgFQu+NF4aKhCvwTrQE+HIWn2xzii+7YpFHrE+l+QjQzdjFvHVdliuwQzhNt13sgnC
+        7ziShbgk05BRWiNDuJ1brcrRdo8cVFNpXYwAM2FQ0Koiz2F7Dmuo1mQiqrO8MqTtaKNPDCFfVLwG
+        EL11P4Dr5QSJexTK107VVnyRBcjSfDmLt6G4+Po7i/R6wxbaI2mJ2/bGfDkjxgT51YIWJ4vofzRK
+        xmvN6sg+IThH5ExvpLJ1zdisUM+4a4WQtkkzHSfxjNhKycKRF0YeXYufjJH4p6D0CM4Irpw9Oulx
+        t8E6hxwpYhhis5wVp5NnYz311dmPkzHasBLzSARoSCxCUMEHll4geRy24TAjdFBeOGVjroPBSMm9
+        6SnFm+3sCqWCmGqBnChp0KnJbPo6c7E6qYL00fZuhvFJ0QTN4g/3VZv13EhsyCqslqBHYuHte7+6
+        toy2WkE/TeSnM/4Hx8qsDi9VG4f2GzuRs4WLMWoANjapqFvGW/fvYWEaMueH8vDrj+Xy22rIstHU
+        PLO3rLBqiz5p48k7IwVgRBK66q360Oakg7QoC6mLd4ZK923sKmy8AW73ozYA4hFaF2OtIU9l18Kb
+        29lV1IUnBN6PvOwYWzF9z13XPifb927Fm0lDzsb2WqBn+dhVJhOlyk8WxcWresdoLm28MooY/Uua
+        KLtQfKdAsJA45oGLIYLJvTCu4T8PbX+/fu88GB4Y18+IeAzL26caJ0bbbTd+Dtc5L85tUbe++ELu
+        bcdJ1xCvyPn1K30NOUiS9sBruBNZprdp6X1kt43PKx8LKL6R/PW5dX/MnexG+n/Q2OyE7EO7FNdx
+        my5IoaNtaHGbYw72XI8RnvKg2oLorCRRe/7G1JAZFVN0sJLCs1/PyhKPN3JM6fpx2gELWGG9ONi8
+        bVO4nPIt6EDjOthvR9VkCHpVR0lH6dr2eXWbyj5++/gPt1pyb18LAAA=
+    headers:
+      cache-control:
+      - no-cache
+      connection:
+      - Keep-Alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '953'
+      content-type:
+      - application/json
+      date:
+      - Mon, 24 Feb 2020 19:43:19 GMT
+      keep-alive:
+      - timeout=2, max=100
+      server:
+      - Apache/2
+      set-cookie:
+      - laravel_session=eyJpdiI6Ikd6ejFsVkEwNCsyOUlidVRKR2dnbVE9PSIsInZhbHVlIjoiam12SE1CZGFqc1N2UUU1QjhMSDRBQkJuZThRWXp0eHA4ZVFEWDluQzJLY3loeE1BUXNidmxJOVJiOVhNZnZMS2JLSllIbEtMOWJ4cHBDY3F4Y3B1clE9PSIsIm1hYyI6ImUxNTFhN2ZiNGUzZTgyNjBhNWY1ZmJmZjI3YmViNDZkNDAwNDVkZTFjYjQ5NGRiNTc3MjNkNjEyY2NlZWMyMDUifQ%3D%3D;
+        expires=Mon, 24-Feb-2020 21:43:19 GMT; Max-Age=7200; path=/; httponly
+      vary:
+      - Accept-Encoding,User-Agent
+      x-powered-by:
+      - PHP/5.6.31
+    status:
+      code: 200
+      message: OK
+version: 1

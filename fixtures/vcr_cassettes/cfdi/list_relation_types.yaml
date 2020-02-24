@@ -1,0 +1,56 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      F-API-KEY:
+      - JDJ5JDEwJGlZTWhETVZpb01EMmk2REtZWC9EQi53UmhmYlN3TWVPT1N2M3J1U2hEREpibjMuZi80Qk5D
+      F-SECRET-KEY:
+      - JDJ5JDEwJE5pMlRLZjF0NVh4QkdnTDFJQ3paZ2VPdmIuNm45SGc2YkFoalQ2Tm1sMkdEY295TDF1eWJH
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: http://devfactura.in/api/v3/catalogo/Relacion
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA5WRO08DMRCE/4rlOsVBeCVtokg0NNABxcbei1bxeS0/IqEo/x37Dp1zAgGpvH7M
+        NzPyUXoMjm1AuZQhKYUhyJnUEEEuX49yjx/5ornKZxa68uiJIwiNQvm31DS40BS57A0HoVmlDm3M
+        o0cDitiC5iBPs5F0/Z2kB9D2MtC8gtZ4YJMUFU47twXSoVdgVU/WIAJvPYoWVEwegmAR82IKUjiP
+        B5qibyr6OYVIccouAVeb9eNP0tsqfRktah7K5l8pRm8oRfEcclchm+Gx2KHFrAHh2PcBfi1wXwFD
+        0CwCZ0jBpAjYSIocn0sf/vB2sMueaPPgcx1DGjROzBf/Imhq0VP/p++nTyo1Y9eGAgAA
+    headers:
+      cache-control:
+      - no-cache
+      connection:
+      - Keep-Alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '279'
+      content-type:
+      - application/json
+      date:
+      - Mon, 24 Feb 2020 19:43:23 GMT
+      keep-alive:
+      - timeout=2, max=100
+      server:
+      - Apache/2
+      set-cookie:
+      - laravel_session=eyJpdiI6InV3VmJMUFlMWnd1NHJRemRQVFc3RlE9PSIsInZhbHVlIjoieTliUkw3MFVQZzFtVlJwOVhjckdKdXN1ZkFEUXF3dUg4VGQxQXFVVm54TlwvODAwOWdGb1RQUklqNnVwaHEwbXM4d1lXZzlwZm1ROWFlZmFPTm91b1VnPT0iLCJtYWMiOiIwZjEwNzkxMGVhMzhjNWEyOWE0ODA1YjI2ZTUxMTExYjI0NjlmNzI1NDFmMGVmMTZjN2Q5OTRjNThlOTUwODU2In0%3D;
+        expires=Mon, 24-Feb-2020 21:43:23 GMT; Max-Age=7200; path=/; httponly
+      vary:
+      - Accept-Encoding,User-Agent
+      x-powered-by:
+      - PHP/5.6.31
+    status:
+      code: 200
+      message: OK
+version: 1

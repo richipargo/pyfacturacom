@@ -1,0 +1,62 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      F-API-KEY:
+      - JDJ5JDEwJGlZTWhETVZpb01EMmk2REtZWC9EQi53UmhmYlN3TWVPT1N2M3J1U2hEREpibjMuZi80Qk5D
+      F-SECRET-KEY:
+      - JDJ5JDEwJE5pMlRLZjF0NVh4QkdnTDFJQ3paZ2VPdmIuNm45SGc2YkFoalQ2Tm1sMkdEY295TDF1eWJH
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: http://devfactura.in/api/v3/catalogo/UsoCfdi
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA4VUTW/bMAz9K4JPG5BD2u6j7S1Yhi6HYcF23HZgZNoRZpMuJQUoiv73UXaaqM2i
+        nYLY1tPj++BjJegHJo/VbeWjteh9NatqCFDd/nys/uCDvribX+hDgj59tajvo/POul9xPm+uyNRo
+        ehQLZB2kw3EEg37DvnqaHTEujxhL3HEXrWNCP1MAbyNSYG/YbJhc4yxMLwtwV0e4O/DpMJJpkVCg
+        O3tslU/ySecOokOXr1rlzL/yxnUgjs2DQRVi4DQ/K2NHYAYW42iH4v8HmbH/fIAJAqRuSMDCyXf/
+        Omm5H2JIpCB5yEqwdPv7zAqoWT0IwvcRu2RHz109/kIQp2AKukUR/ZxCUdoPubR9pIOLJihys8+L
+        Pi1R+3gWxIPCOKVQFPb6eP6b6qlTqEikjsHBsbOnl3k6vjCxJKe96RN1vKmd5TGuNJJQvHYK3pb9
+        kIjBC9mb1BJ4AX95ktkceh8fC4OOXEOtbaidP/wtAZ+WoYljE7DIJ8vSkgmC25X5Z7lZUUDdHSqD
+        4KgGNmgVYIwJmgHaFKxxJCvPQ45iqQMB7aTsGw0DmC1sVL7DRnlbopCFbJGq8pyOtFDUF/XZG+jM
+        j8X3EkqWsrW4HiaiHtsoykoL1Z7aU8K7PtE/r/NxNKOrjjUnhjedayFoUaGEe5PvzGEC8W6/7Mal
+        maiD5hw7A1sW4ZkZpom0z1o8aoHSetDNCl596SCppewGpFdb6vT+i3mmE7T8LJPsdN8lEnW0U2rU
+        Se6wdRCigC84uM47tla0GhtHTl6X8vfTXwnSFPWcBgAA
+    headers:
+      cache-control:
+      - no-cache
+      connection:
+      - Keep-Alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '603'
+      content-type:
+      - application/json
+      date:
+      - Mon, 24 Feb 2020 19:43:20 GMT
+      keep-alive:
+      - timeout=2, max=100
+      server:
+      - Apache/2
+      set-cookie:
+      - laravel_session=eyJpdiI6ImhEWVR1cExvR2NtZW9nekljTXZWbFE9PSIsInZhbHVlIjoiSUpTMmFoMFpkU0tJWkpwZlR3QmxmVUZTY0FGXC9tU2FoSm9USzFzbHM0U0o1REt4REtjNUViOHYwVldidkR0XC9sTjM5bVczamJvcWMyaUYzMXc2OVQ3dz09IiwibWFjIjoiMDExYTQyMDlmYzExZjc5N2NiNzk5MmFhZjhlYTcyMjU5OGNmZmM2ZmU0MzhiZDZlZDdmOWViODdhYjQ3MGQxZiJ9;
+        expires=Mon, 24-Feb-2020 21:43:20 GMT; Max-Age=7200; path=/; httponly
+      vary:
+      - Accept-Encoding,User-Agent
+      x-powered-by:
+      - PHP/5.6.31
+    status:
+      code: 200
+      message: OK
+version: 1

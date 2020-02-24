@@ -1,0 +1,62 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      F-API-KEY:
+      - JDJ5JDEwJGlZTWhETVZpb01EMmk2REtZWC9EQi53UmhmYlN3TWVPT1N2M3J1U2hEREpibjMuZi80Qk5D
+      F-SECRET-KEY:
+      - JDJ5JDEwJE5pMlRLZjF0NVh4QkdnTDFJQ3paZ2VPdmIuNm45SGc2YkFoalQ2Tm1sMkdEY295TDF1eWJH
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: http://devfactura.in/api/v3/catalogo/RegimenFiscal
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA3VUTW/bMAz9K4JPG5BDPtpu7S1r02xAixXNsduBkZiAnSy6kh00KPrfR9lZLHnp
+        TZYeycfHR78VHkPFLmBxVYRGawyhGBUGaiiunt6KP7iXh4vxRC4dlBG1RIcerDKo7nCvHtAHdhDU
+        PcsthuJ91IfN+rAhTml26pacnByru0Z7qGnHefx5H79q0BoOaq9WYMGTHFH9cFvhL8d5oJIsRAAc
+        AVmqiz7V3Ht0BkpCV3MG+tqDbrD81YzHOAmKDlUy6GUPvRb92JIBTTFkM3MpcjLukY8YyEhVaRqd
+        QqsWr7UH94yeVSCnFqGGtUVNHbcobgkuBkT8fUvo8pV0xnqSDOcoSMVe3dAuVouifAqsqVUPtBwc
+        SaHwOcsyPTGr27aiCaShG9hc1zEpGOlgUVZSS5RuxylO8LyR/iRwYIPJ2QcESRqTrwE6mdRKNOG1
+        pS1E0lJlQ0EP008TgVfSJnb0rpkrbE0l3MWsQs+Iwf+NSL00qLiqwbVUDG3Qk1ehOT3vaSayZi9B
+        /bzFyJFXFpDomao23/pOVM0Wwkgtwcm9j8cV2V3yFiXFIDTlMcucbNXPSreCqwo8qKVvKm6b7XXI
+        Is9S07I35OLKZJBkBb6T8azBrxs/MP+XxNKdKbdUikOl8sLBM7pEGlZz89KQeOh4JbBvYvABuct0
+        +ZSVRh5x2+lRRvBBZDk8eJRpdXu0j9miWgc7yg+msTU50CecOEus8h9RydMtR7eda7YB4uUOLPuB
+        R88/FiASp9TlvK7RZWWEaNn+n36//wXQONUjgQUAAA==
+    headers:
+      cache-control:
+      - no-cache
+      connection:
+      - Keep-Alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '601'
+      content-type:
+      - application/json
+      date:
+      - Mon, 24 Feb 2020 19:43:24 GMT
+      keep-alive:
+      - timeout=2, max=100
+      server:
+      - Apache/2
+      set-cookie:
+      - laravel_session=eyJpdiI6IlpWWE9zZ2F3UjYrSkxlczZ2N1F3bXc9PSIsInZhbHVlIjoiczZwMFNMQWVZSHBXTkhpVEc5NFFHOFwvbXRHclBuVTRWRm5mdDk1djZWaWNQcVVHeDFBV3BqTWx1RnNTU2E1OXhoNHludGhqcDg2MUNoV0sxRFJQQnZRPT0iLCJtYWMiOiI2NDkwZDBhZDIwN2U1YjI4Y2EzZDMyMmJkMzY2MDQyNWQyMjMxNWYzOTk3MTBmMGRhMTk0Zjk4OTMzZjliMWU0In0%3D;
+        expires=Mon, 24-Feb-2020 21:43:24 GMT; Max-Age=7200; path=/; httponly
+      vary:
+      - Accept-Encoding,User-Agent
+      x-powered-by:
+      - PHP/5.6.31
+    status:
+      code: 200
+      message: OK
+version: 1

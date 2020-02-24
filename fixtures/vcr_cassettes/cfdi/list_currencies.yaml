@@ -1,0 +1,89 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      F-API-KEY:
+      - JDJ5JDEwJGlZTWhETVZpb01EMmk2REtZWC9EQi53UmhmYlN3TWVPT1N2M3J1U2hEREpibjMuZi80Qk5D
+      F-SECRET-KEY:
+      - JDJ5JDEwJE5pMlRLZjF0NVh4QkdnTDFJQ3paZ2VPdmIuNm45SGc2YkFoalQ2Tm1sMkdEY295TDF1eWJH
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: http://devfactura.in/api/v3/catalogo/Moneda
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      cache-control:
+      - no-cache
+      connection:
+      - Keep-Alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '2154'
+      content-type:
+      - application/json
+      date:
+      - Mon, 24 Feb 2020 19:43:22 GMT
+      keep-alive:
+      - timeout=2, max=100
+      server:
+      - Apache/2
+      set-cookie:
+      - laravel_session=eyJpdiI6Imw3V2hXTnhWcUxJVUhwUXhkXC9OQVpBPT0iLCJ2YWx1ZSI6IlBRRXZ6RHJPK0RHWHhTOURCd3IxQk5pcXJrMVwvc2F2R2RhTWxkTVNSQUlyMFpjXC9QbjhuRFNmSUhLWE12NTBJWVN2cVVqUWRpakhOZFBRdEkwbUlhdmc9PSIsIm1hYyI6ImY2MDBlODQ3MmUyMjMxMjJmY2FkNjQ2OWFkZTliYmU3MzVlZmUxMWVmNTgxMzE0NzFkMTY2NDM5NmNhMTk5NjgifQ%3D%3D;
+        expires=Mon, 24-Feb-2020 21:43:22 GMT; Max-Age=7200; path=/; httponly
+      vary:
+      - Accept-Encoding,User-Agent
+      x-powered-by:
+      - PHP/5.6.31
+    status:
+      code: 200
+      message: OK
+version: 1
